@@ -10,9 +10,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: [
-      "https://vercel-todo-4ubny9rmo-kishans-projects-ed322ba3.vercel.app",
-    ],
+    origin: ["https://vercel-todo-kappa.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true,
   })
 );
 // MongoDB connection
