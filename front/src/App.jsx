@@ -11,12 +11,9 @@ const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        "https://vercel-todo-imf3.vercel.app/add",
-        {
-          task,
-        }
-      );
+      const response = await axios.post("http://localhost:3000/add", {
+        task,
+      });
       console.log("Task added:", response.data);
     } catch (error) {
       console.error("Error adding task:", error);
