@@ -1,3 +1,16 @@
 {
-  "devCommand": "npm run dev"
+  "version": 2,
+  "devCommand": "next dev",
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }
