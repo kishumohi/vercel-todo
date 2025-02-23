@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: ["https://vercel-todo-kappa.vercel.app"],
+    origin: ["*"],
     methods: ["POST", "GET"],
     credentials: true,
   })
