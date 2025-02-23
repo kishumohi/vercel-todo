@@ -12,7 +12,7 @@ const App = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://vercel-todo-m3v4.vercel.app/add",
+        "https://vercel-todo-imf3.vercel.app/add",
         {
           task,
         }
